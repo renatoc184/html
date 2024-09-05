@@ -1,0 +1,46 @@
+@charset "UTF 8";
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+/*
+#c5ebd6
+#83e1ad
+#3ddc84
+#2fa866
+#1a5c37
+#063d1e
+*/
+:root{
+    --cor0:  #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2:#3ddc84;
+    --cor3: #2fa866;
+    --cor4 :#1a5c37;
+    --cor5 :#063d1e;
+    --fonte-padrao:Arial,Verdana,helvetica,sans-serif
+    --fonte-destaque:"Bebas Neue", sans-serif;
+}
+body{
+    background-color: #93c7aa;
+    font-family: var(--fonte-padrao);
+}
+header{color:var(--cor3);
+    background-color: forestgreen;
+font-family: var(--fonte-destaque);
+min-width: 150px;
+text-align: center;
+text-shadow: 2px 2px 0px black;}
+header>p{
+    color: white;
+}
+nav{background-color: var(--cor5);
+padding: 10px;
+text-decoration: none; 
+}
+nav>a :hover{background-color: seashell;}
+main{background-color: white;
+font-family: Verdana, Geneva, Tahoma, sans-serif;}
+footer{background-color: peru;}
+div.video {padding: 20px;}
