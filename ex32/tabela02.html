@@ -9,6 +9,7 @@
 
         table{width: 500px;
             border-collapse: collapse;
+            position: relative;
     }
 
     td,th{ border: 1px solid black;
@@ -18,6 +19,14 @@
     color: white;}
     tfoot{background-color: grey;
     color: white;}
+    tbody > tr:nth-child(2n){
+        background-color: lightgray;
+    }
+
+    caption{font-size: 1.5em;
+    font-weight: bold;
+padding: 10px;
+background-color: lightgrey;}
     </style>
 </head>
 <body>
@@ -35,10 +44,13 @@
     
     -->
     <table>
+        <caption>
+            População das Unidades Federativas
+        </caption>
         <thead>
 <tr>
-    <th>Estado</th>
-    <th>população</th>
+    <th scope="col">Estado</th>
+    <th scope="col" style="width: 50px;">população</th>
 </tr>
         </thead>
 
@@ -59,7 +71,7 @@
 
         <tfoot>
 <tr>
-<th>
+<th scope="row">
     Total de Habitantes
 </th>
 <td>00000</td>
