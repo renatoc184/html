@@ -3,3 +3,15 @@
 @media print {
     
 }
+
+@media screen and (min-width: 768px) and (max-width: 992px)  {{body background-image: ;);}
+img#phone{ display: none; }
+img#tablet{display: block;}
+img#print{display: none;}
+img#pc{display: none;}
+img#tv{display: none;} }}
+@media screen and (min-width: 992px) and (max-width:1200px)  {
+    body{background-image: url(../img/back-pc.jpg);}
+}
+
+@media screen and(min-width:1200px)
